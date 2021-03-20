@@ -28,3 +28,18 @@ Spring에서 JDBC를 사용하는 세가지 방식
 		NamedParameterMain : 테스트를 위한 메인 클래스
 
 3. SimpleJdbcInsert 클래스를 이용한 데이터 삽입 : NamedParamGuestMessageDao의 일부분만 변경
+
+### 사용한 데이터베이스 테이블 예시
+
+~~~
+CREATE TABLE GUESTBOOK (
+    MESSAGE_ID NUMBER(5,0),
+    GUEST_NAME VARCHAR2(20) DEFAULT NULL,
+    MESSAGE VARCHAR2(4000),
+    REGISTRY_DATE DATE DEFAULT NULL,
+    CONSTRAINT GUESTBOOK_PK PRIMARY KEY (MESSAGE_ID)
+);
+
+CREATE SEQUENCE GUEST_SEQ MINVALUE 1 MAXVALUE 99999
+INCREMENT BY 1 START WITH 1 NOCACHE NOORDER NOCYCLE;
+~~~
