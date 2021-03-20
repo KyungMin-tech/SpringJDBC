@@ -1,6 +1,6 @@
 # SpringJDBC
 Spring에서 JDBC를 사용하는 세가지 방식
-
+<br>
 1. JdbcTemplate 클래스를 사용한 실습<br>
 tommy.spring.guestbook.vo<br>
 GuestMessage : VO에 해당하는 클래스<br>
@@ -26,7 +26,7 @@ NamedParamGuestmessageDao : NamedParameter JdbcTemplate을 이용한 DAO 클래�
 <br>
 tommy.spring.guestbook.controller<br>
 NamedParameterMain : 테스트를 위한 메인 클래스<br>
-
+<br>
 3. SimpleJdbcInsert 클래스를 이용한 데이터 삽입 : NamedParamGuestMessageDao의 일부분만 변경<br>
 
 ### 사용한 데이터베이스 테이블 예시
